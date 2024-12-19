@@ -10,6 +10,7 @@ By varying one parameter at a time while keeping others balanced using the below
 As a metric I will use perplexity to asses how the model performance changes as the parametersallocation in the model changes.
 
 In order to perform the assesment I will use the code that I completed for HW6, of the Applied Deep Learning course.
+In training and testing the model I will try to use an ensemble of books to give more data to the model to be trained on.
 
 The total number of parameters in the GPT Transformer I will use, can be calculed like this:
 
