@@ -6,6 +6,11 @@ Specifically, I will explore by varying the following configurations:
 - Number of Attention Heads
 - Feed-Forward Neural Network
 
+By varying one parameter at a time while keeping others balanced using the below equation. 
+As a metric I will use perplexity to asses how the model performance changes as the parametersallocation in the model changes.
+
+In order to perform the assesment I will use the code that I completed for HW6, of the Applied Deep Learning course.
+
 The total number of parameters in the GPT Transformer I will use, can be calculed like this:
 
 - **Calculating the Embedding Layer Parameters**
@@ -47,6 +52,3 @@ The total number of parameters in the GPT Transformer I will use, can be calcule
 - TOTAL
     - **EmbeddingLayer + Layers *(MultiheadAttention + FeedForwardLayer + LayerNormalization) + FinalLayerNormalization**
     - **VE + LE + L(4E²+4E + 2EH + E + H + 4E) + 2E**
-
-By varying one parameter at a time while keeping others balanced using the above equation. 
-As a metric I will use perplexity to asses how the model performance changes as the parametersallocation in the model changes.
