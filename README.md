@@ -22,7 +22,7 @@ The total number of parameters in the GPT Transformer I will use, can be calcule
         - Each attention has 3 sets of weights: Q, K, V
         - Each head has a dimension E_h = E / h(#of heads)
             - d_head = d_model // n_head
-        - # of params for Q, K, V in a single head is: 3 * (E_h * E)
+        - Number of params for Q, K, V in a single head is: 3 * (E_h * E)
             - becomes 3*E^2
             - Add a bias vector of 3*E
         - Output of MHA is a weighted sum of the heads —> requires an additional projection, with weights **Wo: E*E**
