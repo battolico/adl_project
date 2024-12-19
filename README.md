@@ -44,9 +44,9 @@ The total number of parameters in the GPT Transformer I will use, can be calcule
         - we have 2 Layer Norms
         - **4*E**
     - Final Layer Norm
-    - TOTAL
-        - **EmbeddingLayer + Layers *(MultiheadAttention + FeedForwardLayer + LayerNormalization) + FinalLayerNormalization**
-        - **VE + LE + L(4E²+4E + 2EH + E + H + 4E) + 2E**
+- TOTAL
+    - **EmbeddingLayer + Layers *(MultiheadAttention + FeedForwardLayer + LayerNormalization) + FinalLayerNormalization**
+    - **VE + LE + L(4E²+4E + 2EH + E + H + 4E) + 2E**
 
 By varying one parameter at a time while keeping others balanced using the above equation. 
 As a metric I will use perplexity to asses how the model performance changes as the parametersallocation in the model changes.
